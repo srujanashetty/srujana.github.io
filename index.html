@@ -13,7 +13,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
     height: 100vh;
     background: linear-gradient(135deg, #6d28d9, #14b8a6);
@@ -58,7 +58,7 @@ body {
     color: white;
 }
 
-/* Sections */
+/* GENERAL SECTIONS */
 section {
     max-width: 1000px;
     margin: 60px auto;
@@ -67,6 +67,7 @@ section {
 
 h2 {
     color: #6d28d9;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -77,10 +78,26 @@ h2 {
     margin-bottom: 30px;
 }
 
+/* SKILLS */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-box {
+    background: #e0e7ff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* PROJECT LIST */
 ul {
     padding-left: 20px;
 }
 
+/* FOOTER */
 footer {
     background: #111827;
     color: white;
@@ -97,10 +114,10 @@ a {
 
 <body>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <div class="hero">
     <h1>Srujana C T</h1>
-    <p>Data Science Graduate</p>
+    <p>Data Science Graduate | Machine Learning | Deep Learning</p>
 
     <div class="buttons">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -108,7 +125,41 @@ a {
     </div>
 </div>
 
-<!-- Projects Section -->
+<!-- ABOUT ME -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Passionate Data Science graduate skilled in Python, SQL, Machine Learning,
+        Deep Learning, and Data Visualization. Experienced in data cleaning,
+        exploratory data analysis (EDA), and building predictive models to solve
+        real-world business problems and generate actionable insights.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skills-container">
+            <div class="skill-box">Python</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">Machine Learning</div>
+            <div class="skill-box">Pandas</div>
+            <div class="skill-box">NumPy</div>
+            <div class="skill-box">Scikit-learn</div>
+            <div class="skill-box">Power BI</div>
+            <div class="skill-box">Tableau</div>
+            <div class="skill-box">Matplotlib</div>
+            <div class="skill-box">MS Excel</div>
+            <div class="skill-box">Statistics</div>
+            <div class="skill-box">Data Analysis</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
@@ -134,7 +185,7 @@ a {
     </div>
 </section>
 
-<!-- Certification -->
+<!-- CERTIFICATION -->
 <section>
     <h2>Certification</h2>
     <div class="card">
@@ -142,7 +193,7 @@ a {
     </div>
 </section>
 
-<!-- Contact Section -->
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <div class="card">
@@ -157,7 +208,7 @@ a {
 </section>
 
 <footer>
-    © 2026 Srujana C T
+    © 2026 Srujana C T | Data Science Portfolio
 </footer>
 
 </body>
