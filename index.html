@@ -6,10 +6,15 @@
 <title>Srujana C T | Data Science Portfolio</title>
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6fb;
+    background-color: #f5f7fa;
     scroll-behavior: smooth;
 }
 
@@ -17,17 +22,16 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(135deg, #6d28d9, #14b8a6);
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 50px;
-    margin: 0;
+    font-size: 48px;
 }
 
 .hero p {
@@ -35,16 +39,16 @@ body {
     margin: 15px 0;
 }
 
-.buttons {
+.btn-container {
     margin-top: 20px;
 }
 
 .btn {
     padding: 12px 25px;
+    margin: 10px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    margin: 10px;
     display: inline-block;
 }
 
@@ -58,14 +62,14 @@ body {
     color: white;
 }
 
-/* GENERAL SECTIONS */
-section {
+/* SECTIONS */
+.section {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 20px;
 }
 
-h2 {
+.section h2 {
     color: #6d28d9;
     margin-bottom: 20px;
 }
@@ -73,13 +77,13 @@ h2 {
 .card {
     background: white;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     margin-bottom: 30px;
 }
 
 /* SKILLS */
-.skills-container {
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -95,6 +99,11 @@ h2 {
 /* PROJECT LIST */
 ul {
     padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -103,11 +112,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bold;
 }
 </style>
 </head>
@@ -119,30 +123,30 @@ a {
     <h1>Srujana C T</h1>
     <p>Data Science Graduate | Machine Learning | Deep Learning</p>
 
-    <div class="buttons">
+    <div class="btn-container">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a>
     </div>
 </div>
 
 <!-- ABOUT ME -->
-<section>
+<div class="section">
     <h2>About Me</h2>
     <div class="card">
         <p>
         Passionate Data Science graduate skilled in Python, SQL, Machine Learning,
         Deep Learning, and Data Visualization. Experienced in data cleaning,
         exploratory data analysis (EDA), and building predictive models to solve
-        real-world business problems and generate actionable insights.
+        real-world problems and generate actionable insights.
         </p>
     </div>
-</section>
+</div>
 
 <!-- SKILLS -->
-<section>
+<div class="section">
     <h2>Skills</h2>
     <div class="card">
-        <div class="skills-container">
+        <div class="skills">
             <div class="skill-box">Python</div>
             <div class="skill-box">SQL</div>
             <div class="skill-box">Machine Learning</div>
@@ -157,19 +161,19 @@ a {
             <div class="skill-box">Data Analysis</div>
         </div>
     </div>
-</section>
+</div>
 
 <!-- PROJECTS -->
-<section id="projects">
+<div class="section" id="projects">
     <h2>Projects</h2>
 
     <div class="card">
         <h3>Customer Churn Prediction</h3>
         <ul>
-            <li>Built machine learning models using Logistic Regression and Random Forest</li>
-            <li>Developed Artificial Neural Network (ANN) model for improved prediction</li>
+            <li>Built ML models using Logistic Regression and Random Forest</li>
+            <li>Developed ANN model for improved accuracy</li>
             <li>Performed data cleaning and feature engineering</li>
-            <li>Conducted exploratory data analysis (EDA)</li>
+            <li>Conducted EDA to identify churn patterns</li>
             <li>Evaluated model using Accuracy, Precision, Recall, F1-score and ROC-AUC</li>
         </ul>
     </div>
@@ -177,35 +181,35 @@ a {
     <div class="card">
         <h3>Image Classification using CNN</h3>
         <ul>
-            <li>Built Convolutional Neural Network (CNN) for image classification</li>
-            <li>Applied data preprocessing and augmentation techniques</li>
+            <li>Built Convolutional Neural Network (CNN)</li>
+            <li>Applied preprocessing and augmentation techniques</li>
             <li>Improved accuracy using hyperparameter tuning</li>
-            <li>Evaluated model using Confusion Matrix and Classification Report</li>
+            <li>Evaluated using Confusion Matrix and Classification Report</li>
         </ul>
     </div>
-</section>
+</div>
 
 <!-- CERTIFICATION -->
-<section>
+<div class="section">
     <h2>Certification</h2>
     <div class="card">
         Data Science Certificate
     </div>
-</section>
+</div>
 
 <!-- CONTACT -->
-<section id="contact">
+<div class="section" id="contact">
     <h2>Contact</h2>
     <div class="card">
         <p>📞 7619442319</p>
         <p>📧 srujana648366@gmail.com</p>
         <p>
-            🔗 <a href="https://www.linkedin.com/in/srujana-c-t-835b033a0" target="_blank">
-            LinkedIn Profile
-            </a>
+        🔗 <a href="https://www.linkedin.com/in/srujana-c-t-835b033a0" target="_blank">
+        LinkedIn Profile
+        </a>
         </p>
     </div>
-</section>
+</div>
 
 <footer>
     © 2026 Srujana C T | Data Science Portfolio
@@ -213,4 +217,3 @@ a {
 
 </body>
 </html>
-
